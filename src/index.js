@@ -9,7 +9,7 @@ dotenv.config();
 
 async function main() {
   const app = express();
-  const port = "https://rootstock-bot.vercel.app/";
+  const port = 3000;
 
   // Parse the request body as JSON
   app.use(bodyParser.json());
