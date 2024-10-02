@@ -9,7 +9,7 @@ dotenv.config();
 
 async function main() {
   const app = express();
-  const port = process.env.PORT || 3000;
+  const port = 3000;
 
   // Parse the request body as JSON
   app.use(bodyParser.json());
