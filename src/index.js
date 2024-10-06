@@ -55,7 +55,7 @@ async function main() {
 
     try {
       const balance = await web3.eth.getBalance(walletAddress);
-      bot.sendMessage(chatId, `The balance of the address ${walletAddress} is ${web3.utils.fromWei(balance, 'ether')} ETH.`);
+      bot.sendMessage(chatId, `The balance of the address ${walletAddress} is ${web3.utils.fromWei(balance, 'ether')} RBTC.`);
     } catch (error) {
       bot.sendMessage(chatId, 'Failed to fetch the balance. Please try again later.');
       console.error(error);
@@ -69,7 +69,7 @@ async function main() {
     try {
       const gasPrice = await web3.eth.getGasPrice();
       const gasInEth = web3.utils.fromWei(gasPrice, "ether");
-      bot.sendMessage(chatId, `The current gas price is ${gasInEth} eth.`);
+      bot.sendMessage(chatId, `The current gas price is ${gasInEth} RBTC.`);
     } catch (error) {
       bot.sendMessage(chatId, `Failed to fetch gas price. Please try again later.`);
       console.error(error);
